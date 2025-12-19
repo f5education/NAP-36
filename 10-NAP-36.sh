@@ -2,7 +2,7 @@
 # So I'll remove it for all NGINX labs from this script
 # The MV NAP class labs do require the nap.conf file but Labs1-3 don't start with lab 4 nap.conf which is what is on the base VM
 # so remove nap.conf and nap.orig from base image and then in the actual lab script 20-NAP-36-xxx the appropriate file will be loaded
-sudo ssh nginx sudo rm /etc/nginx/conf.d/nap.{conf,orig}
+sudo ssh nginx sudo rm --force /etc/nginx/conf.d/nap.{conf,orig}
 
 # install 30 day nginx one trial licenses from Salesforce - EXPIRES May 22, 2025
 set +x
